@@ -1,0 +1,97 @@
+LAB SHEET-09
+SMART DIGITAL EXPENSE TRACKER WITH BUDGET PREDICTION
+BCA I Semester (Session 2026–2027)
+
+1. OBJECTIVE
+To create a simple C++ expense management system. It allows a user to register and log in, add daily expenses, view expense history, check category-wise spending, set a monthly budget, receive budget warnings, predict month-end spending, search expenses, and delete expenses.
+
+2. SOFTWARE REQUIREMENTS
+- C++ compiler (such as Code::Blocks, Visual Studio Code with a C++ compiler, or g++)
+- Text editor or IDE
+- Computer with a file system for saving records
+
+3. MODULES
+1. User Registration
+2. Login System
+3. Add Daily Expense
+4. View Expense History
+5. Category-wise Expense
+6. Monthly Expense Report
+7. Budget Setting
+8. Budget Warning
+9. Expense Prediction
+10. Search Expense
+11. Delete Expense
+12. File Saving
+
+4. CONCEPTS USED
+- Variables and data types
+- Loops and conditional statements
+- Vector (dynamic array)
+- Structure
+- Functions
+- Strings
+- Searching
+- File handling
+- Menu-driven programming
+
+5. ALGORITHM / LOGIC
+Step 1: Start the program.
+Step 2: Display Register, Login, and Exit options.
+Step 3: Register a new username and password, or log in using saved details.
+Step 4: After successful login, load the user's expenses and budget from files.
+Step 5: Display the expense tracker menu.
+Step 6: According to the selected option, add, view, search, or delete expenses; show category totals; set a budget; or generate a monthly report.
+Step 7: Calculate current-month spending by adding expenses whose date begins with the current YYYY-MM.
+Step 8: Predict month-end spending using:
+        Predicted spending = (Current spending / Days passed) x Days in month
+Step 9: Compare spending or predicted spending with the monthly budget and show a warning when needed.
+Step 10: Save updated data in files.
+Step 11: Logout or exit the program.
+
+6. HOW TO RUN
+1. Open 01_Smart_Digital_Expense_Tracker.cpp in a C++ IDE.
+2. Compile the program using a C++11-or-later compiler.
+3. Run the program.
+4. Select Register and create a username and password.
+5. Select Login and enter the same details.
+6. Set a monthly budget and add expenses.
+7. Use the menu to view reports, predictions, search, or delete records.
+
+7. SAMPLE INPUT AND OUTPUT (ILLUSTRATIVE)
+Main menu:
+1. Register
+2. Login
+3. Exit
+
+After registration and login:
+1. Add Daily Expense
+2. View Expense History
+3. Category-wise Expense
+4. Monthly Expense Report and Prediction
+5. Set Monthly Budget
+6. Budget Warning
+7. Search Expense
+8. Delete Expense
+9. Logout and Exit
+
+Example:
+Monthly budget entered: Rs. 5000
+Expense added:
+Date: 2026-11-01
+Category: Food
+Description: Lunch
+Amount: Rs. 150
+
+Budget status will show the amount spent and remaining budget. The monthly report estimates spending at the end of the month based on the average daily spending so far. Exact predicted values depend on the date and expenses entered.
+
+8. CONCLUSION
+The Smart Digital Expense Tracker is a menu-driven C++ project that helps users record and manage daily expenses. It uses structures, functions, loops, searching, and file handling. It also gives budget warnings and a simple month-end spending prediction.
+
+9. IMPORTANT NOTES / LIMITATIONS
+- Enter dates in YYYY-MM-DD format. For today's date, enter T.
+- Usernames and passwords must not contain spaces.
+- This is a basic educational project. Passwords are stored as plain text, so it is not suitable for real financial or sensitive data.
+- The prediction is a simple average-based estimate, not an AI model.
+- The program stores separate expense and budget files for each username in the same folder as the program.
+- Keep the generated data files in that folder so the saved records can be loaded next time.
